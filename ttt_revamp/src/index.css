@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  background-color: #E2E1E1;
+  color: #6F052E;
+  padding: 2%;
+}
+a {
+  text-decoration-line: none;
+}
+p {
+  font-size: 1em;
+}
+h1 {
+  text-align: center;
+}
+h4 {
+  font-weight: 100;
+  font-size: 1.3em;
+}
+
+/* Navbar.js */
+#navbar-wrapper {
+  display: grid; 
+  grid-template-columns: 30% 70%;
+  height: 10%;
+}
+#navbar-wrapper .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-button {
+  color: #6F052E;
+  display: inline-block;
+  padding-bottom: 2px;
+  background-image: linear-gradient(#2A0312 0 0);
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s, background-position 0s 0.3s;
+}
+.nav-button:hover {
+  background-position: 100% 100%;
+  background-size: 100% 2px;
+}
+.active h4 {
+  font-weight: 700;
+}
+
+/* Homepage.js */
+#homepage {
+  position: relative;
+}
+
+/* Footnote.js */
+#footnote {
+  background-color: #6F052E;
+  color: #E2E1E1;
+  height: 30%;
+  margin: -2%;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  padding-top: 3%;
+  box-sizing: border-box;
+}
+#social-media-wrapper {
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  justify-content: space-around;
+  width: 15%;
+}
+.social-btn {
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5em;
+  background-color: #E2E1E1;
+  color: #6F052E;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.icon {
+  font-size: 2em;
+}
