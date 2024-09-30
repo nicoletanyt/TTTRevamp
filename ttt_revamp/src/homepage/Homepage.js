@@ -1,5 +1,6 @@
 import React from 'react'
 import Footnote from './Footnote';
+import Timeline from './Timeline';
 
 export default function Homepage() {
   return (
@@ -12,11 +13,8 @@ export default function Homepage() {
       </section>
       <hr />
       <section>
-        <h1>Why choose us?</h1>
-      </section>
-      <hr />
-      <section>
         <h1>Milestones</h1>
+        <Timeline/>
       </section>
       <Footnote/>
     </div>

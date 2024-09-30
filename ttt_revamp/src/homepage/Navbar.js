@@ -10,16 +10,16 @@ export default function Navbar() {
           <div className="logo">Logo</div>
           <div className="links">
             <NavLink to="/">
-              <h4 className="nav-button">Home</h4>
+              <h3 className="nav-button">Home</h3>
             </NavLink>
             <NavLink to="/about">
-              <h4 className="nav-button">About us</h4>
+              <h3 className="nav-button">About us</h3>
             </NavLink>
             <NavLink to="/courses">
-              <h4 className="nav-button">Courses</h4>
+              <h3 className="nav-button">Courses</h3>
             </NavLink>
-            <h4 className="nav-button">Student Services</h4>
-            <h4 className="nav-button">Connect</h4>
+            <h3 className="nav-button">Student Services</h3>
+            <h3 className="nav-button">Connect</h3>
           </div>
         </div>
       </nav>

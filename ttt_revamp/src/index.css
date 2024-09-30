@@ -1,22 +1,22 @@
 body {
   margin: 0;
   font-family: "Playfair Display", serif;
-  background-color: #E2E1E1;
-  color: #6F052E;
+  background-color: #f3e3e4;
+  color: #8B0438;
   padding: 2%;
+  padding-bottom: 0;
 }
 a {
   text-decoration-line: none;
 }
-p {
-  font-size: 1em;
+p, li, h3 {
+  font-size: 1.3em;
 }
 h1 {
   text-align: center;
 }
-h4 {
-  font-weight: 100;
-  font-size: 1.3em;
+::-webkit-scrollbar {
+  display: none;
 }
 
 /* Navbar.js */
@@ -31,10 +31,10 @@ h4 {
   align-items: center;
 }
 .nav-button {
-  color: #6F052E;
+  color: #8B0438;
   display: inline-block;
   padding-bottom: 2px;
-  background-image: linear-gradient(#2A0312 0 0);
+  background-image: linear-gradient(#8B0438 0 0);
   background-position: 0 100%;
   background-size: 0% 2px;
   background-repeat: no-repeat;
@@ -45,34 +45,33 @@ h4 {
   background-size: 100% 2px;
 }
 .active h4 {
-  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
 }
 
 /* Homepage.js */
 #homepage {
   position: relative;
+  height: 60%;
 }
 
 /* Footnote.js */
 #footnote {
-  background-color: #6F052E;
-  color: #E2E1E1;
-  height: 30%;
-  margin: -2%;
-  margin-bottom: 0;
-  margin-top: 0;
-  width: 100%;
+  background-color: #8B0438;
+  color: #f3e3e4;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
-  position: fixed;
-  bottom: 0;
-  padding-top: 3%;
-  box-sizing: border-box;
+  position: relative;
+  height: 32vh;
+  margin-left: -2.1%;
+  padding: 1%;
 }
 #social-media-wrapper {
   display: flex;
   position: absolute;
-  bottom: 10%;
+  bottom: 8%;
   right: 5%;
   justify-content: space-around;
   width: 15%;
@@ -81,7 +80,7 @@ h4 {
   border-radius: 50%;
   width: 3.5em;
   height: 3.5em;
-  background-color: #E2E1E1;
+  background-color: #f3e3e4;
   color: #6F052E;
   display: inline-flex;
   justify-content: center;
@@ -90,4 +89,101 @@ h4 {
 }
 .icon {
   font-size: 2em;
+}
+
+/* Milestones Section */
+.vertical-line {
+  position: absolute;
+  /* sum of grid-template-rows */
+  height: 120%;
+  border-left: 3px solid black;
+  left: 50%;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+#milestone-wrapper {
+  height: 100vh;
+}
+.milestone-section {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 100%;
+  height: max-content;
+}
+.timeline-right, .timeline-left {
+  width: 50%;
+  /* margin-bottom: 15%; */
+}
+.timeline-left {
+  display: grid;
+  grid-template-rows: 30% 10% 30% 10% 30% 10%;
+}
+.timeline-right {
+  display: grid;
+  grid-template-rows: 20% 20% 20% 20% 20% 20%;
+}
+.year-title {
+  display: flex;
+  background-color: #6F052E;
+  color: #f3e3e4;
+  width: 90%;
+  position: relative;
+}
+.year-title h3 {
+  padding-left: 2%;
+}
+.indicator {
+  width: calc(10% + 3px + 1vw);
+  height: 50%;
+  position: absolute;
+  top: 25%;
+}
+.left .indicator{
+  right: calc(-10% - 1vw - 3px);
+}
+.right .indicator {
+  left: calc(-10% - 1vw - 3px);
+}
+.right {
+  /* 1/2 of height of year-container-left - radius of circle - border width of circle + (space after .year-title * height of year-container-left) /2 */
+  float: right;
+}
+.indicator .line {
+  /* radius - width of line */
+  width: calc(100% - 1vw - 3px);
+  height: 4px;
+  background-color: #8B0438;
+  position: absolute;
+  top: 50%;
+}
+.indicator .circle {
+  width: 2vw;
+  height: 2vw;
+  box-sizing: border-box;
+  border: 2px solid #8B0438;
+  background-color: #f3e3e4;
+  border-radius: 50%;
+  z-index: 2;
+  position: absolute;
+  top: calc(50% - (2vw/2));
+}
+.left .indicator .circle {
+  /* 1/2 of radius - width of line */
+    right: calc(-0.5vw + 3px);
+}
+.right .indicator .circle {
+  /* 1/2 of radius - width of line */
+  left: calc(-0.5vw + 3px);
+}
+.left .indicator .line {
+  left: 0%;
+}
+.right .indicator .line {
+  right: 0%;
+}
+.timeline-text {
+  padding: 2%;
+  box-sizing: border-box;
 }
