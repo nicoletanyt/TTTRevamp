@@ -14,9 +14,9 @@ export default function Homepage() {
       <hr />
       <section>
         <h1>Milestones</h1>
-        <Timeline/>
+        <Timeline />
       </section>
-      <Footnote/>
+      <Footnote />
     </div>
   );
 }

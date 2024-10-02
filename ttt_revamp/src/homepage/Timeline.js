@@ -1,29 +1,21 @@
-import React from 'react'
-import TimelineSection from './TimelineSection';
+import React, { useEffect } from "react";
+import TimelineSection from "./TimelineSection";
+import { MILESTONES } from "../Data";
 
 export default function Timeline() {
   return (
-    <div id="milestone-wrapper">
-      <h2>Decade</h2>
-      <div className="milestone-section">
-        <div className="timeline-left">
-          <TimelineSection year={"2019"} description={"PLACEHOLDER"} side={"LEFT"} />
-          <br />
-          <TimelineSection year={"2019"} description={"PLACEHOLDER"} side={"LEFT"} />
-          <br />
-          <TimelineSection year={"2019"} description={"PLACEHOLDER"} side={"LEFT"} />
-          <br />
-        </div>
-        <div className="vertical-line"></div>
-        <div className="timeline-right">
-          <br />
-          <TimelineSection year={"2019"} description={"PLACEHOLDER"} side={"RIGHT"} />
-          <br />
-          <TimelineSection year={"2019"} description={"PLACEHOLDER"} side={"RIGHT"} />
-          <br />
-          <TimelineSection year={"2019"} description={"PLACEHOLDER"} side={"RIGHT"} />
-        </div>
-      </div>
+    <div className="timeline-wrapper">
+        {
+          MILESTONES.map((item, index) => {
+            return (
+              <TimelineSection
+                year={item.year}
+                description={item.description}
+                key={index}
+              />
+            )
+          })
+        }
     </div>
   );
 }
