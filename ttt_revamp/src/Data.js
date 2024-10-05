@@ -60,3 +60,26 @@ export const MILESTONES = [
       "Hosted the World Masters Professional Beauty and Associates Congress at Sheraton Hotel with Mrs. Joan Thorncroft.",
   },
 ];
+
+export const HIGHLIGHTS = [
+  {
+    image: "",
+    title: "PLACEHOLDER TITLE",
+    desc: "PLACEHOLDER DESC",
+  },
+  {
+    image: "",
+    title: "PLACEHOLDER TITLE",
+    desc: "PLACEHOLDER DESC",
+  },
+  {
+    image: "",
+    title: "PLACEHOLDER TITLE",
+    desc: "PLACEHOLDER DESC",
+  },
+  {
+    image: "",
+    title: "PLACEHOLDER TITLE",
+    desc: "PLACEHOLDER DESC",
+  },
+];

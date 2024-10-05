@@ -1,11 +1,14 @@
 import React, {useEffect, useState} from 'react'
 import Footnote from './Footnote';
 import Timeline from './Timeline';
+import HighlightItem from "./HighlightItem";
+import { HIGHLIGHTS } from '../Data';
 
 // Import Images
 import Banner1 from "../assets/Banner1.png"
 import Banner2 from "../assets/Banner2.png";
 import Banner3 from "../assets/Banner3.png";
+
 const BANNERS = [Banner1, Banner2, Banner3];
 
 export default function Homepage() {
@@ -20,12 +23,33 @@ export default function Homepage() {
 
   return (
     <div id="homepage">
-      <img src={BANNERS[bannerImg]} alt="Banner" />,
+      <img src={BANNERS[bannerImg]} alt="Banner" id="banner-img" />,
       <section>
-        <p>Key messages</p>
+        <p>
+          Top To Toe (TTT) Beauty College started in 1981 to provide its students in
+          Singapore with internationally recognised beauty and holistic wellness
+          experts from overseas. We have trained our local trainers to have
+          expertise that matches international standards. Our high-quality
+          training has enabled our graduates to succeed in the industry.
+        </p>
       </section>
+      <br />
+      <hr />
       <section>
-        <h1>Highlights</h1>
+        <h1>Our Highlights</h1>
+        <p className="highlight-desc">Placeholder</p>
+        <div id="highlights-wrapper">
+          {HIGHLIGHTS.map((item, index) => {
+            return (
+              <HighlightItem
+                key={index}
+                image={item.image}
+                title={item.title}
+                desc={item.desc}
+              />
+            );
+          })}
+        </div>
       </section>
       <hr />
       <section>
