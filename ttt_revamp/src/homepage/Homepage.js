@@ -24,15 +24,13 @@ export default function Homepage() {
   return (
     <div id="homepage">
       <img src={BANNERS[bannerImg]} alt="Banner" id="banner-img" />,
-      <section>
-        <p>
-          Top To Toe (TTT) Beauty College started in 1981 to provide its students in
-          Singapore with internationally recognised beauty and holistic wellness
-          experts from overseas. We have trained our local trainers to have
-          expertise that matches international standards. Our high-quality
-          training has enabled our graduates to succeed in the industry.
-        </p>
-      </section>
+      <p>
+        Top To Toe (TTT) Beauty College started in 1981 to provide its students in
+        Singapore with internationally recognised beauty and holistic wellness
+        experts from overseas. We have trained our local trainers to have
+        expertise that matches international standards. Our high-quality
+        training has enabled our graduates to succeed in the industry.
+      </p>
       <br />
       <hr />
       <section>

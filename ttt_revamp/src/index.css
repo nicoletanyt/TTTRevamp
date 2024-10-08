@@ -58,10 +58,10 @@ hr, section {
   background-position: 100% 100%;
   background-size: 100% 2px;
 }
-.active h4 {
+.active h3 {
   text-decoration: underline;
   text-decoration-thickness: 2px;
-  text-underline-offset: 8px;
+  text-underline-offset: 5px;
 }
 
 /* Homepage.js */
@@ -175,4 +175,24 @@ hr, section {
 }
 .timeline-text {
   padding: 1em;
+}
+
+/* About Us Page */
+#about-us-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.member p {
+  text-align: start;
+}
+.member {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin-bottom: 7%;
+  align-items: center;
+}
+.member-picture {
+  border-radius: 50%;
+  justify-self: center;
 }
