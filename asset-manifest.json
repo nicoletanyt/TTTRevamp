@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/TTTRevamp/static/css/main.8b28e62d.css",
-    "main.js": "/TTTRevamp/static/js/main.4f656297.js",
+    "main.js": "/TTTRevamp/static/js/main.d3946e0c.js",
     "static/media/Banner1.png": "/TTTRevamp/static/media/Banner1.eeffbc46fc0adcd367d7.png",
     "static/media/Banner3.png": "/TTTRevamp/static/media/Banner3.cb42d2c0363cdb03ae5b.png",
     "static/media/Banner2.png": "/TTTRevamp/static/media/Banner2.cb0d838f5ad5e2d68fb9.png",
     "index.html": "/TTTRevamp/index.html",
     "main.8b28e62d.css.map": "/TTTRevamp/static/css/main.8b28e62d.css.map",
-    "main.4f656297.js.map": "/TTTRevamp/static/js/main.4f656297.js.map"
+    "main.d3946e0c.js.map": "/TTTRevamp/static/js/main.d3946e0c.js.map"
   },
   "entrypoints": [
     "static/css/main.8b28e62d.css",
-    "static/js/main.4f656297.js"
+    "static/js/main.d3946e0c.js"
   ]
 }
