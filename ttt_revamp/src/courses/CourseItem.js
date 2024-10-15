@@ -4,7 +4,7 @@ import { domain } from '../App'
 
 export default function CourseItem({name, image, duration, id}) {
   return (
-    <NavLink to={domain + "/courses/" + id}>
+    <NavLink to={"/" + domain + "/courses/" + id}>
         <div className='course-item'>
             <img className='course-image' src={image}/>
             <h3>{name}</h3>
