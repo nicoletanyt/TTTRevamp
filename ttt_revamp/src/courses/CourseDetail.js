@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavLink, useParams } from 'react-router-dom'
 import { COURSES } from '../Data';
+import { domain } from '../App';
 
 export default function CourseDetail() {
 
@@ -9,7 +10,7 @@ export default function CourseDetail() {
 
   return (
 		<div className="course-detail-page">
-            <NavLink to="/courses" className="back-btn">
+            <NavLink to={domain + "/courses"} className="back-btn">
 			    <p>← Back</p>
             </NavLink>
 			{/* <img className="course-img" src={course.img} /> */}

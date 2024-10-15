@@ -7,15 +7,20 @@ import Navbar from './homepage/Navbar';
 import Courses from './courses/Courses';
 import CourseDetail from './courses/CourseDetail';
 
+export const domain = "TTTRevamp"
+
 function App() {
   return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Navbar />}>
+				<Route path={"/" + domain + "/"} element={<Navbar />}>
 					<Route index element={<Homepage />} />
-					<Route path="courses" element={<Courses />} />
-					<Route path="about" element={<About />} />
-					<Route path="/courses/:courseId" element={<CourseDetail />} />
+					<Route path={"/" + domain + "/courses"} element={<Courses />} />
+					<Route path={"/" + domain + "/about"} element={<About />} />
+					<Route
+						path={"/" + domain + "/courses/:courseId"}
+						element={<CourseDetail />}
+					/>
 					<Route path="*" element={<NoPage />} />
 				</Route>
 			</Routes>
