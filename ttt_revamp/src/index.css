@@ -31,6 +31,9 @@ html, body {
 hr, section {
   width: 100%;
 }
+section {
+  padding-top: 3%;
+}
 
 /* Navbar.js */
 #navbar-wrapper {
@@ -72,9 +75,6 @@ hr, section {
 }
 
 /* Highlights Section */
-#highlight-desc {
-  text-align: center;
-}
 #highlights-wrapper {
   display: grid;
   grid-template-columns: 45% 45%;
@@ -82,10 +82,15 @@ hr, section {
   margin-bottom: 5%;
 }
 .highlight-item {
-  text-align: center;
   border: 2px solid #6F052E;
   margin: 3%;
   padding: 3%;
+}
+.highlight-item h3 {
+  text-align: center;
+}
+.highlight-item img {
+  margin-bottom: 3%;
 }
 
 /* Footnote.js */
@@ -187,12 +192,48 @@ hr, section {
   text-align: start;
 }
 .member {
-  display: grid;
-  grid-template-columns: 25% 75%;
+  display: flex;
   margin-bottom: 7%;
   align-items: center;
 }
 .member-picture {
   border-radius: 50%;
-  justify-self: center;
+  margin-right: 5%;
+}
+
+/* Courses Page */
+#courses-grid-display {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  column-gap: 2em;
+  row-gap: 2em;
+}
+.course-item {
+  border: 2px solid #8B0438;
+  border-radius: 5px;
+  min-height: 300px;
+  padding: 5%;
+  color: #8B0438;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.course-item p, h3 {
+  text-align: start;
+  margin: 0;
+}
+.course-item h3 {
+  margin-bottom: 0.5em;
+}
+.course-image {
+  height: 50%;
+}
+
+/* Course Detail Page */
+.course-detail-page {
+  padding: 2%;
+}
+.course-detail-page p {
+  text-align: start;
+  color: #8B0438;
 }

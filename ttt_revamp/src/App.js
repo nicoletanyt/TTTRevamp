@@ -5,20 +5,22 @@ import NoPage from './homepage/NoPage';
 import About from './about-us/About';
 import Navbar from './homepage/Navbar';
 import Courses from './courses/Courses';
+import CourseDetail from './courses/CourseDetail';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navbar />}>
-          <Route index element={<Homepage />} />
-          <Route path="courses" element={<Courses />} />
-          <Route path="about" element={<About />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Navbar />}>
+					<Route index element={<Homepage />} />
+					<Route path="courses" element={<Courses />} />
+					<Route path="about" element={<About />} />
+					<Route path="/courses/:courseId" element={<CourseDetail />} />
+					<Route path="*" element={<NoPage />} />
+				</Route>
+			</Routes>
+		</BrowserRouter>
+	);
 }
 
 export default App;

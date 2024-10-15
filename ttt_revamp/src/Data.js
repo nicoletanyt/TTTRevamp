@@ -62,26 +62,26 @@ export const MILESTONES = [
 ];
 
 export const HIGHLIGHTS = [
-  {
-    image: "",
-    title: "PLACEHOLDER TITLE",
-    desc: "PLACEHOLDER DESC",
-  },
-  {
-    image: "",
-    title: "PLACEHOLDER TITLE",
-    desc: "PLACEHOLDER DESC",
-  },
-  {
-    image: "",
-    title: "PLACEHOLDER TITLE",
-    desc: "PLACEHOLDER DESC",
-  },
-  {
-    image: "",
-    title: "PLACEHOLDER TITLE",
-    desc: "PLACEHOLDER DESC",
-  },
+	{
+		image: "",
+		title: "World Skills Competition for Singapore",
+		desc: "This competition highlights the best of the best, showing off skills that drive industries forward and set new standards. One standout figure here is Jenny Wong. She’s the chief judge, and with her wealth of experience, she’ll ensure that only the top talent walks away with the gold. Jenny judged our first two gold medalists and played a key role in nurturing and evaluating the excellence that won them their medals.",
+	},
+	{
+		image: "",
+		title: "Organizer of the First Aisa Beauty Congress",
+		desc: "Have you ever considered the beauty industry’s impact on our lives? Not just in how we look but also in how it influences our confidence, connections, and careers. Back in the '80s, I had first-hand experience seeing all of this unfold. Organising the first Asia Beauty Congress in 1983 was a game-changer. Fast-forward to 1989 at the World Trade Center, and you can truly grasp how much the industry had evolved.",
+	},
+	{
+		image: "",
+		title: "Cidesco Examiners",
+		desc: "PLACEHOLDER DESC",
+	},
+	{
+		image: "",
+		title: "PLACEHOLDER TITLE",
+		desc: "PLACEHOLDER DESC",
+	},
 ];
 
 export const TEAM = [
@@ -115,3 +115,47 @@ export const TEAM = [
     desc: "Embely Seah is an accomplished professional in the beauty industry, having obtained her Diploma in International Professional Esthetics (USA) in 1997. Additionally, she possesses various certificates in ITEC Facial Skincare and Nail Technology, along with a Diploma in Holistic Massage, among others. She has also devoted more than ten years to her position at Top To Toe Beauty College. Embely enjoys reading books on Human Relations to enhance her communication skills and foster better interpersonal relationships.",
   },
 ];
+
+class Course {
+  constructor(title, img, duration) {
+    this.title = title
+    this.img = img
+    this.duration = duration
+  }
+}
+
+export const COURSES = {
+	"professional-human-development": new Course(
+		"Professional Human Development",
+		"",
+		4
+	),
+	"nurturing-touch-pre-post-natal-well-being": new Course(
+		"Nurturing Touch Pre & Post Natal Well-being",
+		"",
+		16
+	),
+	"tactile-orchestration-integrating-mindful-movement": new Course(
+		"Tactile Orchestration: Integrating Mindful Movement",
+		"",
+		50
+	),
+	"kind-hands-massage-stories-and-songs": new Course(
+		"Kind Hands Massage Stories and Songs",
+		"",
+		8
+	),
+	"impact-well-being": new Course("Impact Well-being", "", 8),
+	"alexander-technique": new Course("Alexander technique", "", 50),
+	"rolfing-structural-integration": new Course(
+		"Rolfing Structural Integration",
+		"",
+		16
+	),
+	"smart-physical-and-mental-health-therapy": new Course(
+		"SMART Physical and Mental Health Therapy",
+		"",
+		8
+	),
+};
+	

@@ -31,11 +31,10 @@ export default function Homepage() {
         expertise that matches international standards. Our high-quality
         training has enabled our graduates to succeed in the industry.
       </p>
-      <br />
       <hr />
       <section>
         <h1>Our Highlights</h1>
-        <p className="highlight-desc">Placeholder</p>
+        <br/>
         <div id="highlights-wrapper">
           {HIGHLIGHTS.map((item, index) => {
             return (
