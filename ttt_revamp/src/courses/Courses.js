@@ -1,11 +1,14 @@
-import React from 'react'
-import Footnote from '../homepage/Footnote'
+import React, { useEffect } from 'react'
 import { COURSES } from '../Data';
 import CourseItem from './CourseItem';
 
 export default function Courses() {
+	useEffect(() => {
+		document.title = "Top To Toe Courses";
+	}, []);
+
   return (
-		<div>
+		<div className='page'>
 			<h1>Our Courses</h1>
 			<p>
 				Our courses are carefully crafted around the core idea that "Beauty is
@@ -36,7 +39,6 @@ export default function Courses() {
 					})}
 				</div>
 			</section>
-			<Footnote />
 		</div>
 	);
 }

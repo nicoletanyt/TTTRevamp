@@ -6,6 +6,8 @@ import About from './about-us/About';
 import Navbar from './homepage/Navbar';
 import Courses from './courses/Courses';
 import CourseDetail from './courses/CourseDetail';
+import PrincipalWelcome from './principal/PrincipalWelcome';
+import Footnote from './homepage/Footnote';
 
 export const domain = "TTTRevamp"
 
@@ -21,9 +23,11 @@ function App() {
 						path={"/" + domain + "/courses/:courseId"}
 						element={<CourseDetail />}
 					/>
+					<Route path={"/" + domain + "/principal-welcome"} element={<PrincipalWelcome />} />
 					<Route path="*" element={<NoPage />} />
 				</Route>
 			</Routes>
+			<Footnote/>
 		</BrowserRouter>
 	);
 }
