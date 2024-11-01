@@ -66,7 +66,7 @@ export default function Homepage() {
 						<hr />
 						<h2>BEAUTY IS ABOUT LIFE AND THE LIVING</h2>
 						<NavLink
-							to={"/" + domain + "/principal"}
+							to={"/" + domain + "/principal-welcome"}
 							target="_blank"
 							className="learn-more-btn"
 						>
