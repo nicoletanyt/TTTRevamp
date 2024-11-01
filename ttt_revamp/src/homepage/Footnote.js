@@ -16,13 +16,13 @@ export default function Footnote() {
 
 			<div className="footer-page-link">
 				<h3>Infomation</h3>
-				<NavLink to={"/" + domain}>
+				<NavLink to="/">
 					<p>Home</p>
 				</NavLink>
-				<NavLink to={"/" + domain + "/about"}>
+				<NavLink to="about">
 					<p>About Us</p>
 				</NavLink>
-				<NavLink to={"/" + domain + "/courses"}>
+				<NavLink to="courses">
 					<p>Courses</p>
 				</NavLink>
 			</div>

@@ -9,7 +9,7 @@ export default function CourseDetail() {
 
 	return (
 		<div className="course-detail-page page">
-			<NavLink to={"/" + domain + "/courses"} className="back-btn">
+			<NavLink to={"/courses"} className="back-btn">
 				<p>← Back</p>
 			</NavLink>
 			{/* <img className="course-img" src={course.img} /> */}

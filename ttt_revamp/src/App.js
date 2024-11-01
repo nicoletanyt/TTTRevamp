@@ -1,5 +1,5 @@
 import './index.css';
-import { BrowserRouter, HashRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Homepage from './homepage/Homepage';
 import NoPage from './homepage/NoPage';
 import About from './about-us/About';
@@ -13,38 +13,19 @@ export const domain = "TTTRevamp"
 
 function App() {
   return (
-		<BrowserRouter>
+		<Router>
 			<Routes>
-				<Route path={"/" + domain + "/"} element={<Navbar />}>
+				<Route path="/" element={<Navbar />}>
 					<Route index element={<Homepage />} />
-					<Route path={"/" + domain + "/courses"} element={<Courses />} />
-					<Route path={"/" + domain + "/about"} element={<About />} />
-					<Route
-						path={"/" + domain + "/courses/:courseId"}
-						element={<CourseDetail />}
-					/>
+					<Route path="courses" element={<Courses />} />
+					<Route path="about" element={<About />} />
+					<Route path="courses/:courseId" element={<CourseDetail />} />
+					<Route path="principal-welcome" element={<PrincipalWelcome />} />
 				</Route>
-				<Route
-					path={"/" + domain + "/principal-welcome"}
-					element={<PrincipalWelcome />}
-				/>
 				<Route path="*" element={<NoPage />} />
 			</Routes>
 			<Footnote />
-		</BrowserRouter>
-		// <Router>
-		// 	<Routes>
-		// 		<Route path="/" element={<Navbar />}>
-		// 			<Route index element={<Homepage />} />
-		// 			<Route path="courses" element={<Courses />} />
-		// 			<Route path="about" element={<About />} />
-		// 			<Route path="courses/:courseId" element={<CourseDetail />} />
-		// 			<Route path="principal-welcome" element={<PrincipalWelcome />} />
-		// 		</Route>
-		// 		<Route path="*" element={<NoPage />} />
-		// 	</Routes>
-		// 	<Footnote />
-		// </Router>
+		</Router>
 	);
 }
 

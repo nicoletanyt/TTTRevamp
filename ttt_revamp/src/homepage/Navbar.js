@@ -10,24 +10,15 @@ export default function Navbar() {
 				<div id="navbar-wrapper">
 					<div className="logo">Logo</div>
 					<div className="links">
-						<NavLink to={"/" + domain} end>
+						<NavLink to="/" end>
 							<p className="nav-button">Home</p>
 						</NavLink>
-						<NavLink to={"/" + domain + "/about"}>
+						<NavLink to="about">
 							<p className="nav-button">About Us</p>
 						</NavLink>
-						<NavLink to={"/" + domain + "/courses"}>
+						<NavLink to="courses">
 							<p className="nav-button">Courses</p>
 						</NavLink>
-						{/* <NavLink to="/" end>
-							<p className="nav-button">Home</p>
-						</NavLink>
-						<NavLink to="/about">
-							<p className="nav-button">About Us</p>
-						</NavLink>
-						<NavLink to="/courses">
-							<p className="nav-button">Courses</p>
-						</NavLink> */}
 						<p className="nav-button">Student Services</p>
 						<p className="nav-button">Connect</p>
 					</div>
