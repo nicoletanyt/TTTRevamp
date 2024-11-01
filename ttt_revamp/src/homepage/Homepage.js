@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Timeline from "./Timeline";
 import HighlightItem from "./HighlightItem";
 import { HIGHLIGHTS } from "../Data";
-import { NavLink } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import { domain } from "../App";
 
 // Import Images
@@ -30,7 +30,7 @@ export default function Homepage() {
 			<section className="banner-img-section">
 				<img src={BANNERS[0]} alt="Banner" id="banner-img" />,
 			</section>
-			<hr/>
+			<hr />
 			<section>
 				<h1>Top To Toe Beauty College Highlights</h1>
 				<p className="desc">
@@ -91,6 +91,8 @@ export default function Homepage() {
 				<h1>Milestones</h1>
 				<Timeline />
 			</section>
+
+			<Outlet />
 		</div>
 	);
 }

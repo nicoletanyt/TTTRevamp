@@ -6,6 +6,7 @@ import LeftPicture from './LeftPicture';
 import Recent1 from "../assets/PRINCIPAL-RECENT1.jpg"
 import Recent2 from "../assets/PRINCIPAL-RECENT2.jpg";
 import Recent3 from "../assets/PRINCIPAL-RECENT3.jpg";
+import Navbar from '../homepage/Navbar';
 
 const RecentImages = [Recent1, Recent2, Recent3]
 

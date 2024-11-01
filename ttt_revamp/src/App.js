@@ -23,12 +23,12 @@ function App() {
 						path={"/" + domain + "/courses/:courseId"}
 						element={<CourseDetail />}
 					/>
-					<Route path="*" element={<NoPage />} />
+					<Route
+						path={"/" + domain + "/principal-welcome"}
+						element={<PrincipalWelcome />}
+					/>
 				</Route>
-				<Route
-					path={"/" + domain + "/principal-welcome"}
-					element={<PrincipalWelcome />}
-				/>
+				<Route path="*" element={<NoPage />} />
 			</Routes>
 			<Footnote />
 		</BrowserRouter>
