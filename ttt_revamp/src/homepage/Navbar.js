@@ -19,6 +19,15 @@ export default function Navbar() {
 						<NavLink to={"/" + domain + "/courses"}>
 							<p className="nav-button">Courses</p>
 						</NavLink>
+						{/* <NavLink to="/" end>
+							<p className="nav-button">Home</p>
+						</NavLink>
+						<NavLink to="/about">
+							<p className="nav-button">About Us</p>
+						</NavLink>
+						<NavLink to="/courses">
+							<p className="nav-button">Courses</p>
+						</NavLink> */}
 						<p className="nav-button">Student Services</p>
 						<p className="nav-button">Connect</p>
 					</div>
