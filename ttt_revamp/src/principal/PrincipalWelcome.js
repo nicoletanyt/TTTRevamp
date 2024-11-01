@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect } from 'react'
 import PrincipalImg from "../assets/PRINCIPAL-IMG2.png"
 import { BIOGRAPHY } from '../Data';
 import LeftPicture from './LeftPicture';

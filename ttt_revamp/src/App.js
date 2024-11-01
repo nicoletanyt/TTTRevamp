@@ -19,11 +19,11 @@ function App() {
 					<Route index element={<Homepage />} />
 					<Route path={"/" + domain + "/courses"} element={<Courses />} />
 					<Route path={"/" + domain + "/about"} element={<About />} />
+					<Route path={"/" + domain + "/principal"} element={<PrincipalWelcome />} />
 					<Route
 						path={"/" + domain + "/courses/:courseId"}
 						element={<CourseDetail />}
 					/>
-					<Route path={"/" + domain + "/principal-welcome"} element={<PrincipalWelcome />} />
 					<Route path="*" element={<NoPage />} />
 				</Route>
 			</Routes>
