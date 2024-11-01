@@ -1,4 +1,3 @@
-import { text } from "express";
 import HIGHLIGHT_1 from ".//assets/HIGHLIGHT_1.jpg";
 import HIGHLIGHT_2 from ".//assets/HIGHLIGHT_2.jpg";
 import HIGHLIGHT_3 from ".//assets/HIGHLIGHT_3.jpg";
@@ -123,8 +122,8 @@ export const TEAM = [
 ];
 
 class Course {
-	constructor(title, img, duration, content) {
-		this.title = title;
+	constructor(name, img, duration, content) {
+		this.name = name;
 		this.img = img;
 		this.duration = duration;
 		this.content = content;

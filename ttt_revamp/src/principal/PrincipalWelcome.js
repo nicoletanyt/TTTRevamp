@@ -3,6 +3,12 @@ import PrincipalImg from "../assets/PRINCIPAL-IMG2.png"
 import { BIOGRAPHY } from '../Data';
 import LeftPicture from './LeftPicture';
 
+import Recent1 from "../assets/PRINCIPAL-RECENT1.jpg"
+import Recent2 from "../assets/PRINCIPAL-RECENT2.jpg";
+import Recent3 from "../assets/PRINCIPAL-RECENT3.jpg";
+
+const RecentImages = [Recent1, Recent2, Recent3]
+
 export default function PrincipalWelcome() {
   
   useEffect(() => {
@@ -53,7 +59,15 @@ export default function PrincipalWelcome() {
 			></iframe>
 			<hr />
 			<h1>Check out Jenny Wong's recent activities</h1>
-			<div></div>
+			<div id='recent-imgs'>
+				{
+					RecentImages.map((image, index) => {
+						return (
+							<img key={index} src={image} alt="Recent Images"/>
+						)
+					})
+				}
+			</div>
 		</div>
 	);
 }

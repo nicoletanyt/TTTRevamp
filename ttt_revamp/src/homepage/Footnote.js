@@ -33,13 +33,21 @@ export default function Footnote() {
 			</div>
 
 			<div id="social-media-wrapper">
-				<a className="social-btn">
+				<a
+					className="social-btn"
+					target="_blank"
+					href="https://www.facebook.com/people/Top-to-Toe-Beauty-College/100070956031230/"
+				>
 					<FaFacebook className="icon" />
 				</a>
-				<a className="social-btn">
+				<a className="social-btn" target="_blank" href="">
 					<FaInstagram className="icon" />
 				</a>
-				<a className="social-btn">
+				<a
+					className="social-btn"
+					target="_blank"
+					href="https://www.youtube.com/@toptotoeworldmasters"
+				>
 					<FaYoutube className="icon" />
 				</a>
 			</div>

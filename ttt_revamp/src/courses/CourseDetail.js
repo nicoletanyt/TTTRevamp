@@ -8,7 +8,7 @@ export default function CourseDetail() {
 	const course = COURSES[courseId];
 
 	return (
-		<div className="course-detail-page">
+		<div className="course-detail-page page">
 			<NavLink to={"/" + domain + "/courses"} className="back-btn">
 				<p>← Back</p>
 			</NavLink>

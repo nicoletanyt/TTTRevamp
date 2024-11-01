@@ -26,13 +26,11 @@ export default function Courses() {
 			<section>
 				<div id="courses-grid-display">
 					{Object.keys(COURSES).map((courseId, index) => {
-            const course = COURSES[courseId]
+            			const course = COURSES[courseId]
 						return (
 							<CourseItem
 								key={index}
-								name={course.title}
-								image={course.img}
-								duration={course.duration}
+								course={course}
 								id={courseId}
 							/>
 						);
