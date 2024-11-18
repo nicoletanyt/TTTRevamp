@@ -19,8 +19,7 @@ export default function Navbar() {
 						<NavLink to="courses">
 							<p className="nav-button">Courses</p>
 						</NavLink>
-						<p className="nav-button">Student Services</p>
-						<p className="nav-button">Connect</p>
+						<p className="nav-button">Contact</p>
 					</div>
 				</div>
 			</nav>

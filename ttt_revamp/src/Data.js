@@ -3,6 +3,12 @@ import HIGHLIGHT_2 from ".//assets/HIGHLIGHT_2.jpg";
 import HIGHLIGHT_3 from ".//assets/HIGHLIGHT_3.jpg";
 import HIGHLIGHT_4 from ".//assets/HIGHLIGHT_4.jpg";
 
+import HumanDev from ".//assets/HumanDevelopment.png"
+import KindHands from ".//assets/KindHands.png";
+import NurturingTouch from ".//assets/NurturingTouch.png";
+
+import JennyWong from ".//assets/PRINCIPAL-IMG1.png"
+
 export const MILESTONES = [
 	{ year: 1981, description: "Top To Toe (TTT) BC was founded." },
 	{
@@ -93,6 +99,7 @@ export const TEAM = [
 	{
 		name: "Jenny Wong",
 		desc: "Jenny Wong has served as the Principal of Top To Toe Beauty College since 1981. She is also the Founder of World Masters Professional Associates and the President of the Singapore Association of Beauty Therapists. Jenny founded TTT College with the mission of enhancing the beauty industry through top-notch education and training in Singapore. As a result, she has transformed TTT College into the most esteemed private educational institution for Beauty and Holistic Wellness in Singapore while also emphasizing the importance of sharing her timeless insights about beauty. Her philosophy can be encapsulated in the 5A's: Authentic, Ascending, Aspirational, Altruistic, and Aesthetic. Jenny possesses a remarkable talent for inspiring and motivating students to reach their full potential. In addition, she excels in effectively leading and managing business operations.",
+		image: JennyWong,
 	},
 	{
 		name: "Helen Tan",
@@ -135,7 +142,7 @@ class Course {
 export const COURSES = {
 	"professional-human-development": new Course(
 		"Professional Human Development",
-		"",
+		HumanDev,
 		4,
 		{
 			about:
@@ -149,7 +156,7 @@ export const COURSES = {
 	),
 	"nurturing-touch-pre-post-natal-well-being": new Course(
 		"Nurturing Touch Pre & Post Natal Well-being",
-		"",
+		NurturingTouch,
 		16,
 		{
 			about:
@@ -161,15 +168,23 @@ export const COURSES = {
 				"Join us in this empowering journey to enhance your practice and make a positive impact on the lives of mothers and their families!",
 		}
 	),
+	"kind-hands-massage-stories-and-songs": new Course(
+		"Kind Hands Massage Stories and Songs",
+		KindHands,
+		8,
+		{
+			about:
+				"Kind Hands offers activities for children in their early years and their parents and carers, utilizing massage stories and nurturing touch through nursery rhymes and songs. The Kind Hands Massage Stories and Songs program provides instructors with tools to assist parents and educators in creating massage stories and songs tailored to the needs of children aged 2 to 6. The course content covers the role of play and kinaesthetic learning, the significance of touch, causes and effects of stress in children and parents, using touch to calm children, creating massage stories, program implementation, working with parents, children with special needs, health and safety, child protection, and evaluation.",
+			"learning-objectives":
+				"Role of play and kinaesthetic learning. The significance of touch. Causes and effects of stress in children and parents. Using touch to calm children. Creating massage stories. Program implementation. Working with parents, children with special needs. Health and safety. Child protection. Evaluation.",
+			why: "Accredited programme focusing on the well-being of children and parents. Activities use a positive and nurturing touch based on respect and choice. Facilitates children's development through play. Employs simple, adaptable, and practical techniques to incorporate stories and songs into massage activities at home, nurseries, and playgroups. Can be utilized for children with unique and complex needs.",
+			"callto-action": "",
+		}
+	),
 	"tactile-orchestration-integrating-mindful-movement": new Course(
 		"Tactile Orchestration: Integrating Mindful Movement",
 		"",
 		50
-	),
-	"kind-hands-massage-stories-and-songs": new Course(
-		"Kind Hands Massage Stories and Songs",
-		"",
-		8
 	),
 	"impact-well-being": new Course("Impact Well-being", "", 8),
 	"alexander-technique": new Course("Alexander technique", "", 50),
