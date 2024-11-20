@@ -1,7 +1,5 @@
 import React, {useEffect } from 'react'
 import PrincipalImg from "../assets/PRINCIPAL-IMG2.png"
-import { BIOGRAPHY } from '../Data';
-import LeftPicture from './LeftPicture';
 
 import Recent1 from "../assets/PRINCIPAL-RECENT1.jpg"
 import Recent2 from "../assets/PRINCIPAL-RECENT2.jpg";
@@ -10,21 +8,16 @@ import Navbar from '../homepage/Navbar';
 
 const RecentImages = [Recent1, Recent2, Recent3]
 
-export default function PrincipalWelcome() {
+export default function PrincipalWelcome({mobileNav}) {
   
   useEffect(() => {
 		document.title = "Top To Toe President";
 	}, []);
 
-	const leftItems = BIOGRAPHY.filter((element, index) => index % 2 == 0)
-
-
   return (
 		<div id="principal-welcome-page" className="page">
 			<div className="principal-card">
-				<div className="left">
-					<img src={PrincipalImg} />
-				</div>
+				<img src={PrincipalImg} />
 				<div className="right">
 					<h1>Welcome Message</h1>
 					<p>
@@ -42,12 +35,15 @@ export default function PrincipalWelcome() {
 			</div>
 			<hr />
 			<h1>Biography</h1>
-			<div className="biography-text">
-				{leftItems.map((element) => {
-					return (<LeftPicture img={element.img} text={element.text}/>)
-				})}
-				
-
+			<div className={!mobileNav && "biography-text"}>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet
+					rutrum lorem in ornare. Praesent sit amet ex maximus, porta nulla a,
+					semper lectus. Donec hendrerit urna sapien, non ullamcorper mauris
+					rhoncus sit amet. In viverra iaculis elit ac pretium. Fusce ipsum
+					magna, tempus mollis lacus vel, gravida scelerisque augue. Nullam non
+					tincidunt augue. Nam quis dui elit.
+				</p>
 			</div>
 			<iframe
 				width="700"
@@ -60,14 +56,10 @@ export default function PrincipalWelcome() {
 			></iframe>
 			<hr />
 			<h1>Check out Jenny Wong's recent activities</h1>
-			<div id='recent-imgs'>
-				{
-					RecentImages.map((image, index) => {
-						return (
-							<img key={index} src={image} alt="Recent Images"/>
-						)
-					})
-				}
+			<div id="recent-imgs">
+				{RecentImages.map((image, index) => {
+					return <img key={index} src={image} alt="Recent Images" />;
+				})}
 			</div>
 		</div>
 	);

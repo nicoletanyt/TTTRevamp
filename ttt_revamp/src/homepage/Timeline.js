@@ -2,9 +2,9 @@ import React from "react";
 import TimelineSection from "./TimelineSection";
 import { MILESTONES } from "../Data";
 
-export default function Timeline() {
+export default function Timeline({mobileNav}) {
   return (
-    <div className="timeline-wrapper">
+    <div className={mobileNav ? "mobile-timeline-wrapper" : "timeline-wrapper"}>
         {
           MILESTONES.map((item, index) => {
             return (

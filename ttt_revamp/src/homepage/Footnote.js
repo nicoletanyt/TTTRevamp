@@ -3,9 +3,9 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
 import { Outlet, NavLink } from "react-router-dom";
 import { domain } from "../App";
 
-export default function Footnote() {
+export default function Footnote({mobileNav}) {
   return (
-		<footer id="footnote">
+		<footer id='footer' className={mobileNav ? 'mobile-footer' : "desktop-footer"}>
 			<div className="organisation-info">
 				<h3>Organization Info</h3>
 				<p>Registration Number: 198104310D</p>
@@ -29,7 +29,7 @@ export default function Footnote() {
 
 			<div>
 				<h3>School Operating Hours:</h3>
-				<p>Monday - Friday: 9am to 6pm</p>
+				<p style={{textAlign: "start"}}>Monday - Friday: 9am to 6pm</p>
 			</div>
 
 			<div id="social-media-wrapper">

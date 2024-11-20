@@ -16,7 +16,7 @@ export default function CourseDetail() {
 				<>
 					<section className="course-intro">
 						<h2>About the course</h2>
-						<p>{course.content["about"]}</p>
+						<p className="text">{course.content["about"]}</p>
 					</section>
 					<section>
 						<h2>Why this course?</h2>
@@ -36,7 +36,7 @@ export default function CourseDetail() {
 								})}
 						</ul>
 					</section>
-					<p>{course.content["call-to-action"]}</p>
+					<p className="text">{course.content["call-to-action"]}</p>
 				</>
 			) : (
 				<p>To be updated</p>

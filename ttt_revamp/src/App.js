@@ -8,23 +8,29 @@ import Courses from './courses/Courses';
 import CourseDetail from './courses/CourseDetail';
 import PrincipalWelcome from './principal/PrincipalWelcome';
 import Footnote from './homepage/Footnote';
-
-export const domain = "TTTRevamp"
+import { useEffect, useState } from 'react';
 
 function App() {
+
+	const [mobileNav, setMobileNav] = useState(false);
+
+	useEffect(() => {
+		setMobileNav(window.innerWidth <= 600);
+	}, []);
+
   return (
 		<Router>
 			<Routes>
-				<Route path="/" element={<Navbar />}>
-					<Route index element={<Homepage />} />
+				<Route path="/" element={<Navbar mobileNav={mobileNav} />}>
+					<Route index element={<Homepage mobileNav={mobileNav} />} />
 					<Route path="courses" element={<Courses />} />
 					<Route path="about" element={<About />} />
 					<Route path="courses/:courseId" element={<CourseDetail />} />
-					<Route path="principal-welcome" element={<PrincipalWelcome />} />
+					<Route path="principal-welcome" element={<PrincipalWelcome mobileNav={mobileNav}/>} />
 				</Route>
 				<Route path="*" element={<NoPage />} />
 			</Routes>
-			<Footnote />
+			<Footnote mobileNav={mobileNav} />
 		</Router>
 	);
 }

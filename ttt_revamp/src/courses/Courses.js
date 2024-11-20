@@ -10,7 +10,7 @@ export default function Courses() {
   return (
 		<div className='page'>
 			<h1>Our Courses</h1>
-			<p>
+			<p className='text'>
 				Our courses are carefully crafted around the core idea that "Beauty is
 				about life and the living." This concept embraces the journey from the
 				beginning of life in the womb to the vast experiences of the outside

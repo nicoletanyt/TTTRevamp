@@ -11,7 +11,7 @@ export default function About() {
 	<>
 		<div id="about-us-page" className='page'>
 			<h1>Our Team</h1>
-			<p>
+			<p className='text'>
 				Top To Toe (TTT) Beauty College started in 1981 to provide its students
 				in Singapore with internationally recognised beauty and holistic
 				wellness experts from overseas. We have trained our local trainers to

@@ -3,7 +3,6 @@ import Timeline from "./Timeline";
 import HighlightItem from "./HighlightItem";
 import { HIGHLIGHTS } from "../Data";
 import { NavLink, Outlet } from "react-router-dom";
-import { domain } from "../App";
 
 // Import Images
 import Banner1 from "../assets/Banner1.png";
@@ -13,16 +12,9 @@ import PrincipalImg from "../assets/PRINCIPAL-IMG1.png";
 
 const BANNERS = [Banner1, Banner2, Banner3];
 
-export default function Homepage() {
-	const [bannerImg, setBannerImg] = useState(0);
-
+export default function Homepage({mobileNav}) {
 	useEffect(() => {
 		document.title = "Top To Toe College";
-
-		// const imgInterval = setInterval(() => {
-		// 	setBannerImg((prevBannerImg) => (prevBannerImg + 1) % BANNERS.length);
-		// }, 3000);
-		// return () => clearInterval(imgInterval);
 	}, []);
 
 	return (
@@ -33,7 +25,7 @@ export default function Homepage() {
 			<hr />
 			<section>
 				<h1>Top To Toe Beauty College Highlights</h1>
-				<p className="desc">
+				<p className={mobileNav ? "text" : "desc"}>
 					Top To Toe (TTT) Beauty College started in 1981 to provide its
 					students in Singapore with internationally recognised beauty and
 					holistic wellness experts from overseas. We have trained our local
@@ -77,11 +69,11 @@ export default function Homepage() {
 						<img id="principal-img" src={PrincipalImg} />
 						<h1>Jenny Wong</h1>
 						<h3>
-							Principal of Top To Toe Beauty College Since 1981
+							Principal of Top To Toe Beauty College since 1981.
 							<br />
-							Founder of World Masters Professional Associates
+							Founder of World Masters Professional Associates.
 							<br />
-							President of Singapore Association of Beauty Therapist
+							President of Singapore Association of Beauty Therapist.
 						</h3>
 					</div>
 				</div>
@@ -89,7 +81,7 @@ export default function Homepage() {
 			<hr />
 			<section>
 				<h1>Milestones</h1>
-				<Timeline />
+				<Timeline mobileNav={mobileNav} />
 			</section>
 
 			<Outlet />
