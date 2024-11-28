@@ -9,6 +9,7 @@ import CourseDetail from './courses/CourseDetail';
 import PrincipalWelcome from './principal/PrincipalWelcome';
 import Footnote from './homepage/Footnote';
 import { useEffect, useState } from 'react';
+import Contact from './contact/Contact';
 
 function App() {
 
@@ -26,7 +27,14 @@ function App() {
 					<Route path="courses" element={<Courses />} />
 					<Route path="about" element={<About />} />
 					<Route path="courses/:courseId" element={<CourseDetail />} />
-					<Route path="principal-welcome" element={<PrincipalWelcome mobileNav={mobileNav}/>} />
+					<Route
+						path="principal-welcome"
+						element={<PrincipalWelcome mobileNav={mobileNav} />}
+					/>
+					<Route
+						path="contact"
+						element={<Contact mobileNav={mobileNav} />}
+					/>
 				</Route>
 				<Route path="*" element={<NoPage />} />
 			</Routes>

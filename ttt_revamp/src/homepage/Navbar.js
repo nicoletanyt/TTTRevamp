@@ -23,7 +23,7 @@ export default function Navbar({mobileNav}) {
 					id="desktop-nav-wrapper"
 					style={{ display: mobileNav ? "none" : "grid" }}
 				>
-					<br/>
+					<br />
 					<div className="links">
 						<NavLink to="/" end>
 							<p className="nav-button">Home</p>
@@ -34,7 +34,9 @@ export default function Navbar({mobileNav}) {
 						<NavLink to="courses">
 							<p className="nav-button">Courses</p>
 						</NavLink>
-						<p className="nav-button">Contact</p>
+						<NavLink to="contact">
+							<p className="nav-button">Contact</p>
+						</NavLink>
 						<div className="logo">
 							<img src={LOGO} id="logo" />
 						</div>

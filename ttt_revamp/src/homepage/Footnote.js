@@ -5,12 +5,15 @@ import { domain } from "../App";
 
 export default function Footnote({mobileNav}) {
   return (
-		<footer id='footer' className={mobileNav ? 'mobile-footer' : "desktop-footer"}>
+		<footer
+			id="footer"
+			className={mobileNav ? "mobile-footer" : "desktop-footer"}
+		>
 			<div className="organisation-info">
 				<h3>Organization Info</h3>
 				<p>Registration Number: 198104310D</p>
 				<p>Top To Toe College of Beauty Therapy and Cosmetology Pte Ltd.</p>
-				<p>Address: #04-13 Far East Plaza, Scotts Road, Singapore 228213</p>
+				<p>Address: Far East Plaza, Scotts Road #04-13, Singapore 228213</p>
 				<p>Tel: +65 6235 7161 | +65 8399 8269</p>
 			</div>
 
@@ -29,7 +32,7 @@ export default function Footnote({mobileNav}) {
 
 			<div>
 				<h3>School Operating Hours:</h3>
-				<p style={{textAlign: "start"}}>Monday - Friday: 9am to 6pm</p>
+				<p style={{ textAlign: "start" }}>Monday - Friday: 9am to 6pm</p>
 			</div>
 
 			<div id="social-media-wrapper">

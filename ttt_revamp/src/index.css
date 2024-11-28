@@ -460,3 +460,15 @@ hr {
 #recent-imgs img {
   width: 100%;
 }
+
+#contact-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#contact-img {
+  width: 400px;
+}
+#contact-text p, #contact-text h1 {
+  text-align: start;
+}
