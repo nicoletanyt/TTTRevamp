@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/TTTRevamp/static/css/main.62e8c19f.css",
-    "main.js": "/TTTRevamp/static/js/main.b287196b.js",
+    "main.css": "/TTTRevamp/static/css/main.7f74f769.css",
+    "main.js": "/TTTRevamp/static/js/main.999b44d2.js",
     "static/media/Banner3.png": "/TTTRevamp/static/media/Banner3.5cf8a430f79f8997b00e.png",
+    "static/media/contact.png": "/TTTRevamp/static/media/contact.73e394bad6d2c1f01e23.png",
     "static/media/PRINCIPAL-IMG2.png": "/TTTRevamp/static/media/PRINCIPAL-IMG2.d65b4f0c706a29bd4aae.png",
     "static/media/Banner1.png": "/TTTRevamp/static/media/Banner1.410ddecf4cbc820cb483.png",
     "static/media/8.png": "/TTTRevamp/static/media/8.b03b9c5c35133c88749f.png",
@@ -25,11 +26,11 @@
     "static/media/PRINCIPAL-RECENT2.jpg": "/TTTRevamp/static/media/PRINCIPAL-RECENT2.b2bd6e9b26391815c3f7.jpg",
     "static/media/PRINCIPAL-RECENT1.jpg": "/TTTRevamp/static/media/PRINCIPAL-RECENT1.d97ce0c54163c3c82661.jpg",
     "index.html": "/TTTRevamp/index.html",
-    "main.62e8c19f.css.map": "/TTTRevamp/static/css/main.62e8c19f.css.map",
-    "main.b287196b.js.map": "/TTTRevamp/static/js/main.b287196b.js.map"
+    "main.7f74f769.css.map": "/TTTRevamp/static/css/main.7f74f769.css.map",
+    "main.999b44d2.js.map": "/TTTRevamp/static/js/main.999b44d2.js.map"
   },
   "entrypoints": [
-    "static/css/main.62e8c19f.css",
-    "static/js/main.b287196b.js"
+    "static/css/main.7f74f769.css",
+    "static/js/main.999b44d2.js"
   ]
 }
