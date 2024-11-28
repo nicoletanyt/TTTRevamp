@@ -350,19 +350,22 @@ hr {
   text-decoration: underline;
 }
 #team-wrapper {
-  /* display: grid;
-  grid-template-columns: repeat(3, 33.33%); */
-  width: min(1000px, 100%);
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  /* width: min(1000px, 100%);
   margin: 0 auto;
-  columns: 3 300px;
+  columns: 3 300px; */
 }
 
 /* Courses Page */
 #courses-grid-display {
-  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
   column-gap: 2em;
   row-gap: 2em;
-  columns: 3 300px
+  margin-top: 2em;
+  /* columns: 3 300px; */
+  /* rows: 3 300px; */
 }
 .course-item {
   border: 2px solid #8B0438;
