@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "../index.css";
 import { Outlet, NavLink, useLocation } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
+import LOGO from "../assets/logo.png"
 
 export default function Navbar({mobileNav}) {
 
@@ -22,7 +23,7 @@ export default function Navbar({mobileNav}) {
 					id="desktop-nav-wrapper"
 					style={{ display: mobileNav ? "none" : "grid" }}
 				>
-					<div className="logo">Logo</div>
+					<br/>
 					<div className="links">
 						<NavLink to="/" end>
 							<p className="nav-button">Home</p>
@@ -34,6 +35,9 @@ export default function Navbar({mobileNav}) {
 							<p className="nav-button">Courses</p>
 						</NavLink>
 						<p className="nav-button">Contact</p>
+						<div className="logo">
+							<img src={LOGO} id="logo" />
+						</div>
 					</div>
 				</div>
 				<div id="mobile-nav" style={{ display: mobileNav ? "block" : "none" }}>

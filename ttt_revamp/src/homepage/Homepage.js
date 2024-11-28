@@ -10,7 +10,7 @@ import Banner2 from "../assets/Banner2.png";
 import Banner3 from "../assets/Banner3.png";
 import PrincipalImg from "../assets/PRINCIPAL-IMG1.png";
 
-const BANNERS = [Banner1, Banner2, Banner3];
+// const BANNERS = [Banner1, Banner2, Banner3];
 
 export default function Homepage({mobileNav}) {
 	useEffect(() => {
@@ -20,7 +20,7 @@ export default function Homepage({mobileNav}) {
 	return (
 		<div id="homepage" className="page">
 			<section className="banner-img-section">
-				<img src={BANNERS[0]} alt="Banner" id="banner-img" />,
+				<img src={Banner2} alt="Banner" id="banner-img" />,
 			</section>
 			<hr />
 			<section>
@@ -83,7 +83,8 @@ export default function Homepage({mobileNav}) {
 				<h1>Milestones</h1>
 				<Timeline mobileNav={mobileNav} />
 			</section>
-
+			<br/>
+			<img src={Banner3} alt="Banner" id="banner-img" />,
 			<Outlet />
 		</div>
 	);

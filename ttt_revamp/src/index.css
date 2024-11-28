@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "Playfair Display", serif;
   background-color: #f3e3e4;
-  color: #8B0438;
+  color: #82050e;
   padding-bottom: 0;
 }
 a {
@@ -31,7 +31,6 @@ html, body, #root {
 }
 section {
   width: 100%;
-  padding-top: 3%;
 }
 hr {
   width: 100%;
@@ -52,8 +51,8 @@ hr {
 /* Navbar.js */
 #desktop-nav-wrapper {
   grid-template-columns: 30% 70%;
-  padding: 1%;
-  background-color: #952d3e;
+  padding: 1em 10em;
+  background-color: #82050e;
   color: #f3e3e4;
 }
 #desktop-nav-wrapper .links {
@@ -110,6 +109,10 @@ hr {
 #mobile-nav:hover .dropdown {
   display: block;
 }
+#logo {
+  /* width: 70px; */
+  height: 4em;
+}
 
 
 /* Homepage.js */
@@ -128,6 +131,7 @@ hr {
 }
 #banner-img {
   width: 100%;
+  margin: 2em 0;
 }
 #principal-img {
   width: 80%;
@@ -145,7 +149,7 @@ hr {
 }
 .principal-welcome-wrapper .left hr {
   width: 70%;
-  border: 1px solid #8B0438;
+  border: 1px solid #82050e;
 }
 .principal-welcome-wrapper .left h2 {
   letter-spacing: 0.2em;
@@ -156,7 +160,7 @@ hr {
   margin-top: 10%;
   font-size: 1em;
   color: #f3e3e4;
-  background-color: #8B0438;
+  background-color: #82050e;
   border: none;
   border-radius: 10px;
 }
@@ -181,11 +185,11 @@ hr {
 }
 .highlight-item {
   /* border: 2px solid #6F052E; */
-  margin: 3%;
   padding: 3%;
   display: flex;
   flex-direction: column;
   padding-bottom: 0;
+  height: 800px;
 }
 .highlight-img {
   width: 100%;
@@ -204,12 +208,12 @@ hr {
 
 /* Footnote.js */
 #footer {
-  background-color: #8B0438;
+  background-color: #82050e;
   color: #f3e3e4;
   width: 100vw;
   position: relative;
   padding: 5%;
-  margin: 5% 0;
+  margin: 3em 0;
 }
 .desktop-footer {
   display: flex;
@@ -281,7 +285,7 @@ hr {
 }
 
 .timeline-component {
-  background-color: #6F052E;
+  background-color: #82050e;
   color: #f3e3e4;
   width: 40%;
   position: relative;
@@ -313,7 +317,7 @@ hr {
   height: 2vw;
   width: 2vw;
   z-index: 1;
-  border: 2px solid #8B0438;
+  border: 2px solid #82050e;
   background-color: #f3e3e4;
   top: 40%;
   right: -10px;
@@ -363,13 +367,13 @@ hr {
   grid-template-columns: 32% 32% 32%;
   column-gap: 2em;
   row-gap: 2em;
-  margin-top: 2em;
+  margin-top: 5em;
   /* columns: 3 300px; */
   /* rows: 3 300px; */
 }
 .course-item {
-  border: 2px solid #8B0438;
-  background-color: #952d3e;
+  border: 2px solid #82050e;
+  background-color: #82050e;
   color: #f3e3e4;
   border-radius: 5px;
   height: 400px;
@@ -388,7 +392,8 @@ hr {
   margin-bottom: 0.5em;
 }
 .course-image {
-  width: 70%;
+  width: 100%;
+  height: 200px;
   margin-bottom: 1em;
 }
 
@@ -399,7 +404,7 @@ hr {
 }
 .course-detail-page p {
   text-align: start;
-  color: #8B0438;
+  color: #82050e;
 }
 .course-detail-page li {
   line-height: 2em;

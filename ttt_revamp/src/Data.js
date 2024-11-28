@@ -3,9 +3,15 @@ import HIGHLIGHT_2 from ".//assets/HIGHLIGHT_2.jpg";
 import HIGHLIGHT_3 from ".//assets/HIGHLIGHT_3.jpg";
 import HIGHLIGHT_4 from ".//assets/HIGHLIGHT_4.jpg";
 
-import HumanDev from ".//assets/HumanDevelopment.png"
-import KindHands from ".//assets/KindHands.png";
-import NurturingTouch from ".//assets/NurturingTouch.png";
+import phd from ".//assets/course/1.png";
+import nuturingTouch from ".//assets/course/2.png";
+import kindHands from ".//assets/course/3.png";
+import tactileOrchestration from ".//assets/course/4.png";
+import impactWellbeing from ".//assets/course/5.png";
+import alexTech from ".//assets/course/6.png";
+import rsi from ".//assets/course/7.png";
+import smart from ".//assets/course/8.png";
+import footReflex from ".//assets/course/9.png";
 
 import JennyWong from ".//assets/PRINCIPAL-IMG1.png"
 
@@ -85,13 +91,14 @@ export const HIGHLIGHTS = [
 	},
 	{
 		image: HIGHLIGHT_3,
-		title: "President of Cidesco Singapore Association of Beauty Therapy",
-		desc: "Professional development is key to success in any industry, and beauty therapy is no exception. As President of the Cidesco Singapore Association of Beauty Therapy, Jenny Wong has seen how vital continuous learning and certification are. Cidesco examiners ensure therapists meet global standards, maintaining quality and excellence for both professionals and clients. Achieving Cidesco certification is more than a credential—it's a mark of commitment to skill and growth.",
+		title: "National representative of the CIDESCO",
+		desc: "CIDESCO is a non-profit organisation that provides quality education in Switzerland. Their students are looking to achieve a superior level of training and the CIDESCO Diploma qualification, recognised worldwide. Top To Toe Beauty College, as the national representative of the CIDESCO, is present Singapore section and formed the Singapore Association of Beauty Therapists - CIDESCO Section Singapore (SING155)",
 	},
 	{
 		image: HIGHLIGHT_4,
-		title: "Jenny is still active as the Principal of TTT College",
-		desc: "Besides teaching lessons, Jenny represents TTT College at trade conferences and exhibitions to network and stay current with industry trends. She also contributes her extensive knowledge at feedback sessions in the industry. We dusted off our archives and selected photographs depicting significant milestones throughout our 40-plus-year journey.",
+		title:
+			"Top To Toe is the first beauty college that introduced ITEC to Singapore",
+		desc: "iTEC is part of the VTCT group, the UK's market-leading vocational and technical awarding organisation. VTCT group's qualifications are delivered under three brands: VTCT, iTEC, and Skillsfirst, which cover over 3,000 training locations worldwide and have over 120,000 learners and apprentices annually. iTEC has a close working partnership with over 650 approved centres worldwide and has offices in Southampton, Ireland and South Africa.  Top To Toe Beauty College has introduced ITEC to Singapore and south-east Asia. Has been the leading school to conduct several ITEC courses and trainings.",
 	},
 ];
 
@@ -142,7 +149,7 @@ class Course {
 export const COURSES = {
 	"professional-human-development": new Course(
 		"Professional Human Development",
-		HumanDev,
+		phd,
 		4,
 		{
 			about:
@@ -156,7 +163,7 @@ export const COURSES = {
 	),
 	"nurturing-touch-pre-post-natal-well-being": new Course(
 		"Nurturing Touch Pre & Post Natal Well-being",
-		NurturingTouch,
+		nuturingTouch,
 		16,
 		{
 			about:
@@ -170,7 +177,7 @@ export const COURSES = {
 	),
 	"kind-hands-massage-stories-and-songs": new Course(
 		"Kind Hands Massage Stories and Songs",
-		KindHands,
+		kindHands,
 		8,
 		{
 			about:
@@ -183,21 +190,22 @@ export const COURSES = {
 	),
 	"tactile-orchestration-integrating-mindful-movement": new Course(
 		"Tactile Orchestration: Integrating Mindful Movement",
-		"",
+		tactileOrchestration,
 		50
 	),
-	"impact-well-being": new Course("Impact Well-being", "", 8),
-	"alexander-technique": new Course("Alexander technique", "", 50),
+	"impact-well-being": new Course("Impact Well-being", impactWellbeing, 8),
+	"alexander-technique": new Course("Alexander technique", alexTech, 50),
 	"rolfing-structural-integration": new Course(
 		"Rolfing Structural Integration",
-		"",
+		rsi,
 		16
 	),
 	"smart-physical-and-mental-health-therapy": new Course(
 		"SMART Physical and Mental Health Therapy",
-		"",
+		smart,
 		8
 	),
+	"Foot Reflexology": new Course("Foot Reflexology", footReflex, 0),
 };
 
 export const BIOGRAPHY = [
