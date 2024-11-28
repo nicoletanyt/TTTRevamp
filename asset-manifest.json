@@ -1,28 +1,35 @@
 {
   "files": {
-    "main.css": "/TTTRevamp/static/css/main.2af35ce2.css",
-    "main.js": "/TTTRevamp/static/js/main.dd7a619c.js",
-    "static/media/HumanDevelopment.png": "/TTTRevamp/static/media/HumanDevelopment.2766478ade95b0e04caf.png",
-    "static/media/Banner1.png": "/TTTRevamp/static/media/Banner1.eeffbc46fc0adcd367d7.png",
+    "main.css": "/TTTRevamp/static/css/main.62e8c19f.css",
+    "main.js": "/TTTRevamp/static/js/main.b287196b.js",
+    "static/media/Banner3.png": "/TTTRevamp/static/media/Banner3.5cf8a430f79f8997b00e.png",
     "static/media/PRINCIPAL-IMG2.png": "/TTTRevamp/static/media/PRINCIPAL-IMG2.d65b4f0c706a29bd4aae.png",
-    "static/media/Banner3.png": "/TTTRevamp/static/media/Banner3.cb42d2c0363cdb03ae5b.png",
+    "static/media/Banner1.png": "/TTTRevamp/static/media/Banner1.410ddecf4cbc820cb483.png",
+    "static/media/8.png": "/TTTRevamp/static/media/8.b03b9c5c35133c88749f.png",
+    "static/media/9.png": "/TTTRevamp/static/media/9.e38186bf378742a65a76.png",
+    "static/media/7.png": "/TTTRevamp/static/media/7.3c8000dc22183007b3cf.png",
+    "static/media/5.png": "/TTTRevamp/static/media/5.6b614e7ddc6388f90900.png",
+    "static/media/6.png": "/TTTRevamp/static/media/6.f8a0caab338bbdba1a3a.png",
+    "static/media/1.png": "/TTTRevamp/static/media/1.f11766d98bfb7a519c68.png",
+    "static/media/2.png": "/TTTRevamp/static/media/2.9d6d285de656bd30f359.png",
+    "static/media/4.png": "/TTTRevamp/static/media/4.deb6abd40e0d2c074843.png",
     "static/media/PRINCIPAL-IMG1.png": "/TTTRevamp/static/media/PRINCIPAL-IMG1.e9db5c962a163c71377f.png",
+    "static/media/3.png": "/TTTRevamp/static/media/3.d99ab4fc90aede55711e.png",
     "static/media/HIGHLIGHT_3.jpg": "/TTTRevamp/static/media/HIGHLIGHT_3.2b3b3abe1e13b5b9ae1a.jpg",
     "static/media/HIGHLIGHT_1.jpg": "/TTTRevamp/static/media/HIGHLIGHT_1.b7e00cbfa55c1f020821.jpg",
     "static/media/HIGHLIGHT_2.jpg": "/TTTRevamp/static/media/HIGHLIGHT_2.0bd17604f35c3e6c9f07.jpg",
     "static/media/HIGHLIGHT_4.jpg": "/TTTRevamp/static/media/HIGHLIGHT_4.e371b3ccf777b3a17d67.jpg",
-    "static/media/Banner2.png": "/TTTRevamp/static/media/Banner2.cb0d838f5ad5e2d68fb9.png",
-    "static/media/KindHands.png": "/TTTRevamp/static/media/KindHands.8668548e27ebd1dc4ae9.png",
+    "static/media/logo.png": "/TTTRevamp/static/media/logo.d8e65a5da202f602be08.png",
+    "static/media/Banner2.png": "/TTTRevamp/static/media/Banner2.29b3f317680fb11c20d2.png",
     "static/media/PRINCIPAL-RECENT3.jpg": "/TTTRevamp/static/media/PRINCIPAL-RECENT3.f1646ad119062836bcbe.jpg",
     "static/media/PRINCIPAL-RECENT2.jpg": "/TTTRevamp/static/media/PRINCIPAL-RECENT2.b2bd6e9b26391815c3f7.jpg",
-    "static/media/NurturingTouch.png": "/TTTRevamp/static/media/NurturingTouch.9c6e446f6db7c5673f71.png",
     "static/media/PRINCIPAL-RECENT1.jpg": "/TTTRevamp/static/media/PRINCIPAL-RECENT1.d97ce0c54163c3c82661.jpg",
     "index.html": "/TTTRevamp/index.html",
-    "main.2af35ce2.css.map": "/TTTRevamp/static/css/main.2af35ce2.css.map",
-    "main.dd7a619c.js.map": "/TTTRevamp/static/js/main.dd7a619c.js.map"
+    "main.62e8c19f.css.map": "/TTTRevamp/static/css/main.62e8c19f.css.map",
+    "main.b287196b.js.map": "/TTTRevamp/static/js/main.b287196b.js.map"
   },
   "entrypoints": [
-    "static/css/main.2af35ce2.css",
-    "static/js/main.dd7a619c.js"
+    "static/css/main.62e8c19f.css",
+    "static/js/main.b287196b.js"
   ]
 }
